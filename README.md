@@ -14,8 +14,12 @@ Solution :
 
 # Database : inbuilt Derby Databse
 
+# Jar Details 
 jar name : BasicCalculatorBackendServer-0.0.1-SNAPSHOT.jar
-jar location : 
+jar location : /master/BasicCalculatorBackendServer-0.0.1-SNAPSHOT.jar
+
+# Execute Jar 
+command : java -jar BasicCalculatorBackendServer-0.0.1-SNAPSHOT.jar
 
 # For Testing used : Postman
 Collection url : https://www.getpostman.com/collections/74a44f93630458e1fcf1 
