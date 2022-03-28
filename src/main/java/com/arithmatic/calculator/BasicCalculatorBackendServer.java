@@ -1,13 +1,13 @@
-package com.game.score;
+package com.arithmatic.calculator;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class GameScoreApplication {
+public class BasicCalculatorBackendServer {
 
 	public static void main(String[] args) {
-		SpringApplication.run(GameScoreApplication.class, args);
+		SpringApplication.run(BasicCalculatorBackendServer.class, args);
 	}
 
 }
