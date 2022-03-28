@@ -10,24 +10,64 @@ Problem Statement :
 
 Solution :
 
-JDK : Java 17
+# JDK : Java 17
 
-Database : inbuilt Derby Databse
+# Database : inbuilt Derby Databse
 
-jar name :
-jar location :
+jar name : BasicCalculatorBackendServer-0.0.1-SNAPSHOT.jar
+jar location : 
 
-For Testing used : Postman
-Collection name :
-Collection location :
+# For Testing used : Postman
+Collection url : https://www.getpostman.com/collections/74a44f93630458e1fcf1 
 
-Rest api :
-Get :
-Post :
-Find by operation :
+# Rest api :
+Get : http://localhost:8989/all
+Get Find by operation: http://localhost:8989/operation/subtraction
+Post : 
+http://localhost:8989/addition , 
+http://localhost:8989/subtraction, 
+http://localhost:8989/multiplication , 
+http://localhost:8989/division
 
-Different Scenario Examples :
-url :
-request:
-response:
+# Different Scenario Examples :
+
+# URL : http://localhost:8989/multiplication
+# Request: 
+{
+"operation":"multiplication",
+"firstParam":11.0,
+"secondParam":2.0,
+"result":0
+}
+# Response: 22 , HTTP status : 200
+
+# URL : http://localhost:8989/addition
+# Request: 
+{
+  "operation":"+",
+"firstParam":11.0,
+"secondParam":2.0,
+"result":0
+}
+# Response: Operation value is invalid, Please add valid operation: [addition, subtraction, multiplication, division]
+# HTTP Status : 400 Bad Request 
+
+# URL : http://localhost:8989/addition
+# Post Request: 
+{
+  "operation":"division",
+"firstParam":11.0,
+"secondParam":2.0,
+"result":0
+}
+# Response: Operation value is invalid, Please add valid operation: [addition, subtraction, multiplication, division]
+# HTTP Status : 400 Bad Request 
+
+# URL : http://localhost:8989/addition
+# Get Find by operation: http://localhost:8989/operation/subtraction
+# Response: Record not Found
+# HTTP Status : 404 Not Found
+
+
+
 
