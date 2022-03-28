@@ -29,7 +29,7 @@ public class ArithmeticOperationService implements IArithmeticOperation {
 
     public List<CalculationData> fetchByOperations(String operation) throws DataNotFoundException {
         if (arithmeticOperationRepository.findByOperation(operation).isEmpty()) {
-            throw new DataNotFoundException("");
+            throw new DataNotFoundException("Record not Found");
         }
         return arithmeticOperationRepository.findByOperation(operation);
     }
